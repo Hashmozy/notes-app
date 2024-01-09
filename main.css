@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #e9e7ece9;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1050px;
+  margin: 60px auto;
+  background: #ad5389; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3c1053,
+    #ad5389
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3c1053,
+    #ad5389
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: none;
+  border: 0;
+  outline: 0;
+}
+
+.container h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-bottom: 2px solid #0f0c29;
+  margin-bottom: 10px;
+  padding: 16px;
+}
+
+.container h1 img {
+  width: 60px;
+}
+
+.container .notes-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.container .card {
+  background-color: #ffffffc8;
+  height: 200px;
+  border: 0;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: 0 0 20px #0f0c29;
+}
+
+.container .card button {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  background-color: aliceblue;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.container .card button img {
+  width: 100px;
+}
+
+.container .card button:hover {
+  background-color: rgba(240, 248, 255, 0.269);
+}
